@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.card {
+  position: relative;
+  margin: 50px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.card #i {
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 280px;
+  height: 50px;
+  background-color: rosybrown;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+.card #i::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  width: 15px;
+  height: 30px;
+  background-color: rgb(124, 103, 103);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+
+.card #i::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  width: 15px;
+  height: 15px;
+  background-color: rosybrown;
+  z-index: 1;
+}
+
+.card #j {
+  position: absolute;
+  top: 120px;
+  left: -15px;
+  width: 280px;
+  height: 50px;
+  background-color: rgb(133, 180, 202);
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+.card #j::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  width: 15px;
+  height: 30px;
+  background-color: rgb(122, 150, 163);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+
+.card #j::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(133, 180, 202);
+  z-index: 1;
+}
